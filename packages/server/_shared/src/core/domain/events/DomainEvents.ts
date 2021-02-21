@@ -4,6 +4,7 @@ import { IDomainEvent } from './IDomainEvent'
 
 export class DomainEvents {
   private static handlersMap = {}
+
   private static markedAggregates: AggregateRoot<any>[] = []
 
   public static markAggregateForDispatch(aggregate: AggregateRoot<any>): void {
